@@ -46,6 +46,9 @@ RUN pip --no-cache-dir install --upgrade \
         tqdm \
         wget
 
+# Download en
+RUN python -m spacy download en
+
 # Open Ports for TensorBoard, Jupyter, and SSH
 EXPOSE 6006
 EXPOSE 7654
